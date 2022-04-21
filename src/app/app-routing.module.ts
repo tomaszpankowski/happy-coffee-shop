@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComingsoonComponent } from './comingsoon/comingsoon.component';
+import { ErrorComponent } from './error/error.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: "",
+    component: ComingsoonComponent
+  },
+  {
+    path: "privacy",
+    component: PrivacyComponent
+  },
+  {
+    path:"**",
+    component: ErrorComponent
+  }
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
