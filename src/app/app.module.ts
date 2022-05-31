@@ -5,20 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { ComingsoonComponent } from './comingsoon/comingsoon.component';
-import { ErrorComponent } from './error/error.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AboutModule } from './about/about.module';
+import { ContactModule } from './contact/contact.module';
+import { HomeModule } from './home/home.module';
+import { ErrorModule } from './error/error.module';
+import { PrivacyModule } from './privacy/privacy.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     PrivacyComponent,
-    ComingsoonComponent,
-    ErrorComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutModule,
+    ContactModule,
+    HomeModule,
+    PrivacyModule,
+    ErrorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

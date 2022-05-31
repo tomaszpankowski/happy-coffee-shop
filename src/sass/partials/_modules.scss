@@ -1,4 +1,4 @@
-//@include aoa-bg-series($bg__init,$classes_init);
+@include aoa-bg-series($bg__init,$classes_init);
 
 .comingsoon-s1{
     background-blend-mode: multiply;
@@ -8,4 +8,108 @@
 }
 .privacy-s1{
     background-blend-mode: multiply;
+}
+.about{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text-shadow;
+    }
+}
+nav{
+    z-index: 10;
+}
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 414px){
+    .about{
+        &-s2{
+            background-position: 64%;
+        }
+    }
+    .contact{
+        &-s1{
+            background-position: 5%;
+        }
+        &-s2{
+            background-position: 68%;
+        }
+    }
+    .index{
+        &-s1{
+            background-position: 35%;
+        }
+    }
+}
+@media all and (min-width: 415px){
+    .about{
+        &-s2{
+            background-position: 79%;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            background-color: #aaa!important;
+            background-blend-mode: overlay!important;
+        }
+    }
+    .index{
+        &-s1{
+            background-position: left;
+        }
+    }
+}
+@media all and (min-width: 575px){
+    .about{
+        &-s2{
+            background-position: 100%;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            background-blend-mode: inherit!important;
+        }
+        &-s2{
+            background-position: 100%;
+        }
+    }
+    .index{
+        &-s1{
+            background-position: center;
+        }
+    }
+}
+@media all and (min-width: 768px){
+    .about{
+        &-s2{
+            background-position: center;
+        }
+    }
+    .contact{
+        &-s1{
+            background-blend-mode: top left !important;
+        }
+        &-s2{
+            background-position: 100%;
+        }
+    }
+}
+@media all and (max-width: 767px){
+    .navbar{
+        &-nav{
+            *:hover{
+                opacity: 0.8;
+            }
+            background-color: #999!important;
+            border: 1px solid #666!important;
+            color: #333!important;
+            padding: 10px;
+        }
+    }
 }

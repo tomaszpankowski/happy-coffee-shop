@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  MenuData:Array<any> = [
+    {path:"",name:"Home"},
+    {path:"about",name:"About"},
+    {path:"contact",name:"Contact"},
+  ];
   title = 'app';
 }
