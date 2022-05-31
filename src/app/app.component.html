@@ -1,2 +1,7 @@
-<router-outlet></router-outlet>
+<header class="position-absolute w-100">
+    <app-navbar [Menu]="MenuData"></app-navbar>
+</header>
+<main class="minh-footer-adj">
+    <router-outlet></router-outlet>    
+</main>
 <app-footer></app-footer>
